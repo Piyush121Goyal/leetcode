@@ -5,7 +5,7 @@ public:
         int M[MAXK][MAXK];
         int T[MAXK];
     };
-    int K;
+    int k;
     int n;
     vector<Node> tree;
 
