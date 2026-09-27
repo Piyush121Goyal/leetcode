@@ -2,12 +2,12 @@ class Solution {
 public:
     int totalNumbers(vector<int>& digits) {
               set<int> seen;
-        int n = digits.size();
-        for (int i = 0; i < n; i++) {
+        int no = digits.size();
+        for (int i = 0; i < no; i++) {
             if (digits[i] == 0) continue;
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < no; j++) {
                 if (j == i) continue;
-                for (int k = 0; k < n; k++) {
+                for (int k = 0; k < no; k++) {
                     if (k == i || k == j) continue;
                     if (digits[k] % 2 != 0) continue;
                     int num = digits[i] * 100 + digits[j] * 10 + digits[k];
