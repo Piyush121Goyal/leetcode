@@ -17,12 +17,12 @@ public:
         if (!node) return {0, 0};
         auto l = dfs(node->left);
         auto r = dfs(node->right);
-        int sum = l.first + r.first + node->val;
+        int summ = l.first + r.first + node->val;
         int cnt = l.second + r.second + 1;
-        if (sum / cnt == node->val) {
+        if (summ / cnt == node->val) {
             cnt_++;
         }
-        return {sum, cnt};
+        return {summ, cnt};
     }
 
     int averageOfSubtree(TreeNode* root) {
