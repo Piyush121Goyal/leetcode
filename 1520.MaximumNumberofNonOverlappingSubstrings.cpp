@@ -1,12 +1,12 @@
 class Solution {
 public:
     vector<string> maxNumOfSubstrings(string s) {
-        int n = s.size();
+        int no = s.size();
         int first[26], last[26];
         fill(first, first + 26, -1);
         fill(last, last + 26, -1);
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < no; i++) {
             int c = s[i] - 'a';
             if (first[c] == -1) first[c] = i;
             last[c] = i;
@@ -14,7 +14,7 @@ public:
 
         vector<pair<int,int>> intervals; // {L, R}
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < no; i++) {
             int c = s[i] - 'a';
             if (first[c] != i) continue; // only start at first occurrence
 
