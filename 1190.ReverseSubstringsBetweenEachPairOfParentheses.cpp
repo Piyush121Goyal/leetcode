@@ -10,15 +10,16 @@ public:
                 pair[i] = j; pair[j] = i;
             }
         }
-        string res;
+        string result;
         for (int i = 0, d = 1; i < n; i += d) {
             if (s[i] == '(' || s[i] == ')') {
                 i = pair[i];
                 d = -d;
             } else {
-                res += s[i];
+                result += s[i];
             }
         }
-        return res;
+        return result;
     }
 };
+
