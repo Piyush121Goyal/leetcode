@@ -1,8 +1,3 @@
-// LeetCode 1. Two Sum
-// Given an array of integers nums and an integer target, return the indices
-// of the two numbers such that they add up to target.
-// Approach: one pass with a hash map (value -> index). O(n) time, O(n) space.
-
 #include <iostream>
 #include <unordered_map>
 #include <vector>
@@ -11,7 +6,7 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> seen;  // value -> index
+        unordered_map<int, int> seen;  
         for (int i = 0; i < (int)nums.size(); i++) {
             int need = target - nums[i];
             auto it = seen.find(need);
@@ -30,6 +25,6 @@ int main() {
     int target = 9;
 
     vector<int> ans = sol.twoSum(nums, target);
-    cout << "[" << ans[0] << ", " << ans[1] << "]" << endl;  // [0, 1]
+    cout << "[" << ans[0] << ", " << ans[1] << "]" << endl;  
     return 0;
 }
