@@ -1,8 +1,3 @@
-// LeetCode 3. Longest Substring Without Repeating Characters
-// Given a string s, find the length of the longest substring without
-// repeating characters.
-// Approach: sliding window with last-seen index per character.
-// O(n) time, O(1) space (fixed 256-size table).
 
 #include <algorithm>
 #include <iostream>
