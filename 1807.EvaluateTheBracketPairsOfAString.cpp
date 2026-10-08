@@ -21,6 +21,6 @@ public:
                 res += s[i];
             }
         }
-        return res;
+        return result;
     }
 };
