@@ -20,6 +20,6 @@ public:
         }
         long long ans = 0;
         for (int d = 1; d <= M; ++d) ans += cnt[d] * d * d;
-        return ans;
+        return answer;
     }
 };
