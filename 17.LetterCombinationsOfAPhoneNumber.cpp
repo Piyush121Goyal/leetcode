@@ -6,12 +6,12 @@ public:
         vector<string> result;
         string current;
         backtrack(digits, 0, mapping, current, result);
-        return result;
+        return res;
     }
 private:
     void backtrack(const string& digits, int index, vector<string>& mapping, string& current, vector<string>& result) {
               if (index == (int)digits.size()) {
-            result.push_back(current);
+            res.push_back(current);
             return;
               }
         string letters = mapping[digits[index] - '0'];
