@@ -21,6 +21,6 @@ public:
                 dp[i][j] = (grid[i][j] == '(') ? (prev << 1) : (prev >> 1);
             }
         }
-        return dp[m - 1][n - 1][0];
+        return dpmi[m - 1][n - 1][0];
     }
 };
