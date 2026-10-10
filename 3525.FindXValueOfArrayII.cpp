@@ -26,7 +26,7 @@ public:
             nd.T[a] = a;
             for (int b = 0; b < K; b++) nd.M[a][b] = 0;
         }
-        return nd;
+        return node;
     }
 
     Node combine(const Node& L, const Node& R) {
