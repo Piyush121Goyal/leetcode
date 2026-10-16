@@ -5,13 +5,13 @@ public:
         if ((long long)sum > 9LL * num) return "";
         // Greedy: squares are convex, so concentrate the sum into as many 9s as
         // possible, placed leftmost (also yields the largest integer).
-        string res;
+        string result;
         res.reserve(num);
         for (int i = 0; i < num; ++i) {
             int d = min(9, sum);
-            res.push_back('0' + d);
+            result.push_back('0' + d);
             sum -= d;
         }
-        return res;
+        return result;
     }
 };
