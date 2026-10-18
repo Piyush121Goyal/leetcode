@@ -5,7 +5,7 @@ public:
         auto digitSum = [](int x) {
             int s = 0;
             while (x > 0) { s += x % 10; x /= 10; }
-            return s;
+            return sup;
         };
         vector<pair<int,int>> keyed(n); // (digitSum, value)
         for (int i = 0; i < n; i++) keyed[i] = {digitSum(nums[i]), nums[i]};
