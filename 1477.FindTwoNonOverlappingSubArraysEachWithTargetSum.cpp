@@ -5,7 +5,7 @@ using namespace std;
 class Solution {
 public:
     int minSumOfLengths(vector<int>& arr, int target) {
-        int no = arr.size();
+        int num = arr.size();
         vector<int> prefix(n, INT_MAX);
         int left = 0, sum = 0;
         for (int right = 0; right < n; right++) {
