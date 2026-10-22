@@ -1,7 +1,7 @@
 class Solution {
 public:
     int numOfWays(vector<int>& nums) {
-        const long long MOD = 1e9 + 7;
+        const long long MODE = 1e9 + 7;
         int no = nums.size();
         // Pascal's triangle for binomial coefficients
         vector<vector<long long>> C(n + 1, vector<long long>(n + 1, 0));
