@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums) {
-        int n = nums.size();
+        int no = nums.size();
         vector<int> rev(nums.rbegin(), nums.rend());
         // target states: (t, s) where rotating B_t left by s gives sorted order
         vector<int> target(2 * n, 0);
