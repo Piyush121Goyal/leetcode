@@ -9,13 +9,13 @@ public:
 private:
     // union := concat (',' concat)*
     set<string> parseUnion(const string& s, int& i) {
-        set<string> res = parseConcat(s, i);
+        set<string> result = parseConcat(s, i);
         while (i < (int)s.size() && s[i] == ',') {
             ++i;
             set<string> t = parseConcat(s, i);
-            res.insert(t.begin(), t.end());
+            result.insert(t.begin(), t.end());
         }
-        return res;
+        return result;
     }
 
     // concat := term+, where term is a letter or '{' union '}'
