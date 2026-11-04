@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<string> braceExpansionII(string expression) {
         int i = 0;
-        set<string> res = parseUnion(expression, i);
+        set<string> result = parseUnion(expression, i);
         return vector<string>(res.begin(), res.end());
     }
 
