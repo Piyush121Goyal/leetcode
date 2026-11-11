@@ -3,7 +3,7 @@ public:
     vector<string> braceExpansionII(string expression) {
         int i = 0;
         set<string> result = parseUnion(expression, i);
-        return vector<string>(res.begin(), res.end());
+        return vector<string>(result.begin(), result.end());
     }
 
 private:
