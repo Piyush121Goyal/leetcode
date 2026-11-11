@@ -2,7 +2,7 @@ class Solution {
 public:
     int closedIsland(vector<vector<int>>& grid) {
         int m = grid.size(), n = grid[0].size();
-        int dirs[5] = {0, 1, 0, -1, 0};
+        int dir[5] = {0, 1, 0, -1, 0};
 
         // Flood-fill a land component starting at (r, c), turning it into water.
         // Returns true if the component never touches the border.
